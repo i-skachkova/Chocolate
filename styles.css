@@ -1,6 +1,312 @@
 .container{
-    width: 1200px;
+    width: 1166px;
     margin: 0 auto;
     padding: 0 15px;
     outline: dashed red;
+}
+body{
+    font-family: 'Montserrat';
+    background-color: #FAFAFA;
+}
+button{
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+.header-logo{
+    color: #111;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.54px;
+}
+.header-menu-item a{
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.28px;
+}
+.hero{
+    height: 600px;
+    background-color: pink
+    /*поки так, просто щоб було видно*/
+}
+.hero-title{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.84px;
+}
+.hero-button{
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    background: transparent;
+    width: 183px;
+    height: 45px;
+
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+.hero-button:hover{
+    background: #FD9222;
+    border-color: #FD9222;
+}
+.about{
+    background-color: #1E1823;
+    height: 344px;
+}
+.about-title{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+.about-text{
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.28px;
+}
+.title-orange{
+    color: #FD9222;
+}
+.ingredients-title{
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+.ingredients-text{
+    color: #111;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+.ingredients-name{
+    color: #111;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+}
+.ingredients-item:nth-child(2n+1) h3{
+    color: #FFF;
+}
+.how-title{
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+.how-list-title{
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.how-list{
+    list-style: disc;
+}
+.how-list-item{
+    color: #111;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+.products-title{
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+.products-list-name{
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+}
+.products-list-type{
+    color: rgba(17, 17, 17, 0.70);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.24px;
+}
+.products-list-button{
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FAFAFA;
+
+    color: #111;
+    font-size: 14px;
+    font-weight: 600;
+}
+.products-list-button:hover{
+    background-color: #FD9222;
+    border-color: #FD9222;
+    color: #FFF;
+    /*це від себе*/
+}
+.topSellers-title{
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+.topSellers-text{
+    color: #111;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+.topSellers-button{
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    background: #FD9222;
+    width: 183px;
+    height: 45px;
+
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+.topSellers-button:hover{
+    border-color: #e4851f;
+    background: #e4851f;
+    /*тут просто задала щоб гарненько було, бо в макеті про це не сказано*/
+}
+.reviews-title{
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+.reviews-names{
+    color: #111;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.reviews-text{
+    color: rgba(17, 17, 17, 0.70);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+.reviews-button{
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    background: transparent;
+    width: 222px;
+    height: 50px;
+
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+}
+.reviews-button:hover{
+    background: #FD9222;
+    color: #FFF;
+    /*і це теж від себе*/
+}
+.subscribe{
+    height: 370px;
+    background-color: pink;
+    /*знову ж таки, просто щоб було видно*/
+} 
+.subscribe-title{
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+.subscribe-text{
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+.subscribe-button{
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    background: #FD9222;
+    width: 172px;
+    height: 50px;
+
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+.subscribe-button:hover{
+    border-color: #e4851f;
+    background: #e4851f;
+    /*тут просто задала щоб гарненько було, бо в макеті про це не сказано*/
+}
+.ourContacts{
+    background: #1E1823;
+}
+.ourContacts-title{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.56px;
+}
+.ourContacts-list-title{
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.ourContacts-list-item a{
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+footer{
+    background: #1E1823;
+    border-top: solid rgba(255, 255, 255, 0.10);
+}
+.footer-menu-item a{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.28px;
 }
