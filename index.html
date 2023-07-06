@@ -38,25 +38,33 @@
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h1>
-            <button class="hero-button" type="button">Buy now</button>
-            <button class="hero-button" type="button">How it's made</button>
+            <div>
+                <button class="hero-button" type="button">Buy now</button>
+                <button class="hero-button" type="button">How it's made</button>
+            </div>
         </div>
     </section>
     <section class="about">
         <div class="container">
             <ul class="about-list">
                 <li class="about-item">
-                    <img class="about-icon" src="./images/about-icon1.png" alt="chocolate">
+                    <div class="circle">
+                        <img class="about-icon" src="./images/about-icon1.png" alt="chocolate">
+                    </div>
                     <h2 class="about-title">Unsurpassed taste</h2>
                     <p class="about-text">Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
                 </li>
                 <li class="about-item">
-                    <img class="about-icon" src="./images/about-icon2.png" alt="coin">
+                    <div class="circle">
+                        <img class="about-icon" src="./images/about-icon2.png" alt="coin">
+                    </div>
                     <h2 class="about-title">Affordable price</h2>
                     <p class="about-text">Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
                 </li>
                 <li class="about-item">
-                    <img class="about-icon" src="./images/about-icon3.png" alt="spoon">
+                    <div class="circle">
+                        <img class="about-icon" src="./images/about-icon3.png" alt="spoon">
+                    </div>
                     <h2 class="about-title">Own production</h2>
                     <p class="about-text">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
                 </li>
@@ -90,15 +98,19 @@
     <section class="how">
         <div class="container">
             <h2 class="how-title">hOW IT’S <span class="title-orange">made?</span></h2>
-            <!--is it img? --><img class="how-img" src="./images/how-img.png" alt="video">
-            <h3 class="how-list-title">Try our chocolates today and discover the perfect balance of flavor</h3>
-            <ul class="how-list">
-                <li class="how-list-item">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
-                <li class="how-list-item">At the same time, prepare a water bath. Melt the butter on it.</li>
-                <li class="how-list-item">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</li>
-                <li class="how-list-item">Heat the mixture over low heat, letting it barely boil.</li>
-                <li class="how-list-item">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
-            </ul>
+            <div class="how-second-container">
+                <!--is it img? --><img class="how-img" src="./images/how-img.png" alt="video">
+                <div class="how-list-container">
+                    <h3 class="how-list-title">Try our chocolates today and discover the perfect balance of flavor</h3>
+                    <ul class="how-list">
+                        <li class="how-list-item">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
+                        <li class="how-list-item">At the same time, prepare a water bath. Melt the butter on it.</li>
+                        <li class="how-list-item">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</li>
+                        <li class="how-list-item">Heat the mixture over low heat, letting it barely boil.</li>
+                        <li class="how-list-item">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
     <section class="products">
@@ -171,8 +183,10 @@
                     <img class="topSellers-img" src="./images/topSellers-img3.png" alt="chocolate">
                 </li>
             </ul>
-            <p class="topSellers-text">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
-            <button class="topSellers-button" type="button">Buy now</button>
+            <div class="topSellers-second-container">
+                <p class="topSellers-text">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+                <button class="topSellers-button" type="button">Buy now</button>
+            </div>
         </div>
     </section>
     <section class="reviews">
@@ -208,11 +222,13 @@
     <section class="ourContacts">
         <div class="container">
             <h2 class="ourContacts-title"><span class="title-orange">Chocolate</span> a delicious cure for a bad day</h2>
-            <h3 class="ourContacts-list-title">Contact us</h3>
-            <ul class="ourContacts-list">
-                <li class="ourContacts-list-item"><a href="tel:+380684439426">+380 (68) 443-94-26</a></li>
-                <li class="ourContacts-list-item"><a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a></li>
-            </ul>
+            <div class="ourContacts-list-container">
+                <h3 class="ourContacts-list-title">Contact us</h3>
+                <ul class="ourContacts-list">
+                    <li class="ourContacts-list-item"><a href="tel:+380684439426">+380 (68) 443-94-26</a></li>
+                    <li class="ourContacts-list-item"><a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a></li>
+                </ul>
+            </div>
             <ul class="ourContacts-contacts">
                 <li class="ourContacts-contacts-item">
                     <a href="#"><img src="./images/footer-inst.png" alt="instagram"></a>

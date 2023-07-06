@@ -2,7 +2,7 @@
     width: 1166px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: dashed red;
+    /* outline: dashed red; */
 }
 body{
     font-family: 'Montserrat';
@@ -12,6 +12,25 @@ button{
     font-family: 'Montserrat';
     cursor: pointer;
 }
+header{
+    padding-top: 26px;
+    padding-bottom: 34px;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container .header-menu{
+    display: flex;
+    gap: 24px;
+    margin-left: 188px;
+    margin-right: 137px;
+}
+header .container .header-contacts{
+    display: flex;
+    gap: 18px;
+}
 .header-logo{
     color: #111;
     font-size: 18px;
@@ -20,6 +39,10 @@ button{
     line-height: 20px;
     letter-spacing: -0.54px;
 }
+.header-logo-img{
+    width: 24px;
+    height: 24px;
+}
 .header-menu-item a{
     color: #111;
     font-size: 14px;
@@ -27,10 +50,26 @@ button{
     line-height: 16px;
     letter-spacing: -0.28px;
 }
+.header-contacts-item img{
+    width: 24px;
+    height: 24px;
+}
 .hero{
-    height: 600px;
-    background-color: pink
+    background-color: pink;
     /*поки так, просто щоб було видно*/
+    padding-top: 381px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+    margin-bottom: 72px;
+}
+.hero .container{
+    display: flex;
+    flex-direction: column;
+}
+.hero .container div{
+    display: flex;
+    padding-left: 40px;
+    gap: 14px;
 }
 .hero-title{
     color: #FFF;
@@ -38,6 +77,11 @@ button{
     font-weight: 500;
     line-height: 34px;
     letter-spacing: -0.84px;
+    margin-bottom: 32px;
+
+    width: 484px;
+    padding-left: 40px;
+    /*аааа, чому він не такий як на макеті? не можу його так само розмістити((*/
 }
 .hero-button{
     border-radius: 100px;
@@ -56,12 +100,34 @@ button{
 }
 .about{
     background-color: #1E1823;
-    height: 344px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 128px;
+}
+.about .container ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 88px;
+}
+.circle{
+    width: 62px;
+    height: 62px;
+    border-radius: 365px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-icon{
+    width: 32px;
+    height: 32px;
 }
 .about-title{
     color: #FFF;
     font-size: 18px;
     font-weight: 600;
+    margin-top: 22px;
+    margin-bottom: 18px;
 }
 .about-text{
     color: rgba(255, 255, 255, 0.70);
@@ -72,6 +138,11 @@ button{
 .title-orange{
     color: #FD9222;
 }
+.ingredients .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .ingredients-title{
     color: #111;
     text-align: center;
@@ -80,6 +151,10 @@ button{
     line-height: 28px;
     letter-spacing: -0.72px;
     text-transform: uppercase;
+
+    width: 411px;
+
+    margin-bottom: 28px;
 }
 .ingredients-text{
     color: #111;
@@ -88,6 +163,29 @@ button{
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.28px;
+
+    width: 486px;
+
+    margin-bottom: 50px;
+}
+.ingredients-list{
+    display: flex;
+    gap: 19px;
+    justify-content: space-between;
+}
+.ingredients-item:nth-child(2n){
+    background: #FFF;
+}
+.ingredients-item:nth-child(3){
+    background: #1E1823;
+    border-color: #1E1823;
+}
+.ingredients-item{
+    border: 1px solid #FD9222;
+    border-radius: 15px;
+    background-color: #FD9222;
+
+    padding: 28px;
 }
 .ingredients-name{
     color: #111;
@@ -96,9 +194,28 @@ button{
     line-height: 18px;
     letter-spacing: -0.28px;
     text-transform: uppercase;
+    
+    margin-top: 36px;
 }
 .ingredients-item:nth-child(2n+1) h3{
     color: #FFF;
+}
+.how{
+    margin: 128px 0;
+}
+.how-second-container{
+    display: flex;
+}
+.how-list-container{
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 32px;
+}
+.how-list-container ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 18px;
 }
 .how-title{
     color: #111;
@@ -108,12 +225,22 @@ button{
     line-height: 28px;
     letter-spacing: -0.72px;
     text-transform: uppercase;
+
+    margin-bottom: 50px;
+}
+.how-img{
+    width: 600px;
+    height: 400px;
+    margin-right: 20px;
 }
 .how-list-title{
     color: #111;
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
+
+    margin-bottom: 28px;
+    width: 350px;
 }
 .how-list{
     list-style: disc;
@@ -133,6 +260,23 @@ button{
     line-height: 28px;
     letter-spacing: -0.72px;
     text-transform: uppercase;
+
+    margin-bottom: 50px;
+}
+.products-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+}
+.products-list-item{
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 32px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .products-list-name{
     color: #111;
@@ -141,6 +285,9 @@ button{
     line-height: 24px;
     letter-spacing: -0.36px;
     text-transform: uppercase;
+    /* text-align: center; */
+
+    margin-top: 8px;
 }
 .products-list-type{
     color: rgba(17, 17, 17, 0.70);
@@ -148,6 +295,7 @@ button{
     font-weight: 400;
     line-height: 14px;
     letter-spacing: -0.24px;
+    /* text-align: center; */
 }
 .products-list-button{
     border-radius: 100px;
@@ -157,12 +305,18 @@ button{
     color: #111;
     font-size: 14px;
     font-weight: 600;
+    margin-top: 18px;
+    width: 94px;
+    height: 33px;
 }
 .products-list-button:hover{
     background-color: #FD9222;
     border-color: #FD9222;
     color: #FFF;
     /*це від себе*/
+}
+.topSellers{
+    margin: 128px 0;
 }
 .topSellers-title{
     color: #111;
@@ -172,6 +326,17 @@ button{
     line-height: 28px;
     letter-spacing: -0.72px;
     text-transform: uppercase;
+
+    margin-bottom: 50px;
+}
+.topSellers-list{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.topSellers-second-container{
+    margin-top: 32px;
+    display: flex;
 }
 .topSellers-text{
     color: #111;
@@ -179,6 +344,8 @@ button{
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.28px;
+
+    width: 407px;
 }
 .topSellers-button{
     border-radius: 100px;
@@ -190,11 +357,22 @@ button{
     color: #FFF;
     font-size: 14px;
     font-weight: 600;
+    margin-left: 567px;
 }
 .topSellers-button:hover{
     border-color: #e4851f;
     background: #e4851f;
     /*тут просто задала щоб гарненько було, бо в макеті про це не сказано*/
+}
+.reviews .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews-list{
+    display: flex;
+    justify-content: center;
+    gap: 28px;
 }
 .reviews-title{
     color: #111;
@@ -204,6 +382,18 @@ button{
     line-height: 28px;
     letter-spacing: -0.72px;
     text-transform: uppercase;
+
+    margin-bottom: 50px;
+}
+.reviews-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 360px;
+    height: 242px;
+    background-color: #FFF;
+    border-radius: 15px;
 }
 .reviews-names{
     color: #111;
@@ -211,6 +401,9 @@ button{
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
+
+    margin-top: 18px;
+    margin-bottom: 24px;
 }
 .reviews-text{
     color: rgba(17, 17, 17, 0.70);
@@ -219,6 +412,7 @@ button{
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.28px;
+    width: 312px;
 }
 .reviews-button{
     border-radius: 100px;
@@ -230,6 +424,8 @@ button{
     color: #111;
     font-size: 18px;
     font-weight: 600;
+
+    margin-top: 50px;
 }
 .reviews-button:hover{
     background: #FD9222;
@@ -237,10 +433,16 @@ button{
     /*і це теж від себе*/
 }
 .subscribe{
-    height: 370px;
     background-color: pink;
+    margin-top: 128px;
+    padding: 72px 0;
     /*знову ж таки, просто щоб було видно*/
 } 
+.subscribe .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .subscribe-title{
     color: #FFF;
     text-align: center;
@@ -249,6 +451,8 @@ button{
     line-height: 28px;
     letter-spacing: -0.72px;
     text-transform: uppercase;
+
+    width: 378px;
 }
 .subscribe-text{
     color: #FFF;
@@ -257,6 +461,11 @@ button{
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.28px;
+
+    width: 467px;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 .subscribe-button{
     border-radius: 100px;
@@ -276,6 +485,12 @@ button{
 }
 .ourContacts{
     background: #1E1823;
+    padding-top: 50px;
+    padding-bottom: 62px;
+}
+.ourContacts .container{
+    display: flex;
+    justify-content: space-between;
 }
 .ourContacts-title{
     color: #FFF;
@@ -283,13 +498,21 @@ button{
     font-weight: 500;
     line-height: 34px;
     letter-spacing: -0.56px;
+    width: 300px;
+    margin-right: 543px;
+}
+.ourContacts-list{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 .ourContacts-list-title{
     color: #FFF;
-    text-align: center;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
+
+    margin-bottom: 14px;
 }
 .ourContacts-list-item a{
     color: #FFF;
@@ -299,9 +522,19 @@ button{
     line-height: 18px;
     letter-spacing: -0.28px;
 }
+.ourContacts-contacts{
+    display: flex;
+    gap: 18px;
+    margin-left: 63px;
+}
 footer{
     background: #1E1823;
     border-top: solid rgba(255, 255, 255, 0.10);
+    padding: 24px 0 50px;
+}
+.footer-menu{
+    display: flex;
+    gap: 24px;
 }
 .footer-menu-item a{
     color: #FFF;
